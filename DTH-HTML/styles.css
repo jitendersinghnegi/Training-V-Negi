@@ -4,8 +4,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: url('Images/MainContent.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: left;
     background-repeat: no-repeat;
    
 }
@@ -70,6 +70,8 @@ nav li:hover {
     font-size: large;
 }
 
+
+
 main {
     padding:4em;
     text-align: center; 
@@ -77,23 +79,62 @@ main {
 }
 main h2 {
     font-size: 2em; 
-    color: whitesmoke;
+    color: rgb(11, 10, 10);
 }
 
 main p {
     font-size: 30px;
-    color: aliceblue;
+    color: rgb(13, 14, 14);
 
 }
+
+
+.book-now-button {
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button i {
+    margin-left: 5px;
+}
+
+.book-now-button:hover {
+    background-color: #2980b9; 
+}
+
+
 
 footer {
     background-color: aliceblue;
     color: #200707;
-    padding: 1em;
+    padding: 2%;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 40px;
+    
+}
+
+
 
 

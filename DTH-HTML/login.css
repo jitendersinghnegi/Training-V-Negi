@@ -19,7 +19,7 @@ body.login-body {
 
 
 
-.login-container {
+/* .login-container {
   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -27,7 +27,7 @@ body.login-body {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-}
+} */
 
 .forms-container {
     display: flex;
@@ -81,6 +81,7 @@ p {
 }
 .register-link {
     text-align: center;
+    
 }
 
 .register-link p {
