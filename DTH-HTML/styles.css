@@ -1,14 +1,25 @@
+
+/* body */
+
+body, h1, h2, p, ul, li, a, button {
+    margin: 50px;
+    padding: 20px;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('Images/MainContent.jpg');
-    background-size: 100%;
+    background-image: url('/Images/MainContent.jpg');
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-   
 }
+
+/* header */
 
 header {
     background-color: aliceblue;
@@ -20,41 +31,60 @@ header {
     align-items: center;
 }
 
+/* logo */
 .logo img {
     max-width: 100px;
-    height: auto; 
+    height: auto;
 }
 
+/* navigation bar */
 nav {
-    flex: 2;
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    margin: 0;
 }
 
 nav li {
-    margin: 0 15px;
-    font-weight: bold;
+    margin: 0;
+    width: 5em;
+    font-weight: bolder;
     transition: color 0.3s;
-    
 }
 
 nav a {
     text-decoration: none;
     color: #200303;
-    
+    font-size: 1.2em; /
 }
+
 nav li:hover {
-    color: #28A745;
-    font-size: large;
+    color: #7dfc15;
+    transform: scale(1.1); 
 }
-   
+
+
+nav a:hover {
+    color: #d1e41e;
+    transform: scale(1.1); 
+}
+
+
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button i {
+    margin-right: 5px;
+}
 
 .login-button a {
     color: rgb(48, 9, 9);
@@ -67,33 +97,69 @@ nav li:hover {
 .login-button a:hover {
     background-color: #ddd;
     color: rgb(116, 33, 33);
-    font-size: large;
 }
-
-
-
+ /* maincontent */
 main {
-    padding:4em;
-    text-align: center; 
-    
+    padding: 10em;
+    text-align: center;
 }
+
 main h2 {
-    font-size: 2em; 
+    font-size: 3em;
     color: rgb(11, 10, 10);
 }
 
 main p {
-    font-size: 30px;
-    color: rgb(13, 14, 14);
+    font-size: 2em;
+    color: rgb(19, 24, 18);
+}
 
+/* activity area */
+.activities-section {
+    text-align: center;
+    margin-top: 100px; 
+    color: #0e0e1e;
+}
+.activity-area {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.activity-area img {
+    width: 100%;
+    max-width: 200px; 
+    border-radius: 8px;
+}
+
+.activity-area h3 {
+    margin-top: 10px;
 }
 
 
+.activity-area img {
+    width: auto;
+    height: 250px; 
+    max-width: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.activity-area img:hover {
+    opacity: 0.7;
+    transform: scale(1.1); 
+}
+
+
+
+/* booking button */
 .book-now-button {
-    background-color: #3498db; 
-    color: #fff; 
+    background-color: #3838c9;
+    color: #fff;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 1.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -105,24 +171,37 @@ main p {
 }
 
 .book-now-button:hover {
-    background-color: #2980b9; 
+    background-color: #2980b9;
 }
 
 
-
+/* Footer styles */
 footer {
     background-color: aliceblue;
     color: #200707;
     padding: 2%;
     text-align: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
+
+.contact-link{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+.contact-link i, .contact-link a {
+    margin: 5px;
+    padding: 0;
+}
+.contact-link a{
+    color: #0a2a4d;
+    text-decoration: none;
+}
 
 .social-icons {
     margin-top: 10px;
@@ -130,10 +209,10 @@ footer {
 
 .social-icons a {
     display: inline-block;
-    margin-right: 40px;
-    font-size: 40px;
-    
+    margin: 10px;
+    font-size: 3em;
 }
+
 
 
 
