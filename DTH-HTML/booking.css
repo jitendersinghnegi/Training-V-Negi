@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.booking-section {
+    text-align: center;
+}
+
+.trek-card {
+    display: inline-block;
+    margin: 20px;
+}
+
+.trek-card img {
+    width: 200px; 
+    height: 150px; 
+    border-radius: 5px;
+}
+
+.trek-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.book-now-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #0056b3;
+    opacity: 0.7;
+    transform: scale(1.1); 
+}
+
+.trek-card {
+    display: inline-block;
+    margin: 20px;
+    width: calc(30% - 60px); 
+    vertical-align: top; 
+    box-sizing: border-box; 
+    transition: transform 0.3s ease; 
+}
+
+.trek-card:hover {
+    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 768px) {
+    .trek-card {
+        width: calc(50% - 40px); 
+    }
+}
+ 
+
+
+.view-details-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.view-details-button:hover {
+    background-color: #218838;
+}

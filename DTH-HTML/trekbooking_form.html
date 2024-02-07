@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trek Booking Form - DareTheHimalayas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="trekbooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="logo">
+                <img src="/Images/logo2.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/trekbooking.html">Booking</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="login-button">
+                <a href="/login.html">
+                    <i class="fas fa-user"></i>Login
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="booking-section">
+            <h2>Trek Booking Form</h2>
+            <p>Please fill in the following details to book your trek adventure:</p>
+            
+           
+            <form class="booking-form">
+                <label for="trek-name">Trek Name:</label>
+                <input type="text" id="trek-name" name="trek-name" required>
+                
+                <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="start-date">Start Date:</label>
+                            <input type="date" id="start-date" name="start-date" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="end-date">End Date:</label>
+                            <input type="date" id="end-date" name="end-date" class="form-control" required>
+                        </div>
+                <label for="stays">Stays:</label>
+                <input type="number" id="stays" name="stays" min="1" required>
+                
+                <label for="package">Choose Package:</label>
+                <select id="package" name="package" required>
+                    <option value="basic">Basic</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+                
+                <button type="submit">Book Now</button>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <div>
+        <footer>
+            <div class="contact-link">
+                <a href="/contact.html">Contact Us</a>
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
